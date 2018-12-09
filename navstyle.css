@@ -10,8 +10,13 @@ header{
     display: flex;
     margin: 0 5px 0 5px;
     align-items: center;
+    
+    
 }
-
+a{
+    text-decoration: none;
+    color:#fff;
+}
 .listItem, .lastItem{
     display: flex;
     justify-content: center;
@@ -22,12 +27,13 @@ header{
     
 }
 
-.listItem:hover, .lastItem:hover{
-    background-color: forestgreen;
+li:hover {
+    background-color: dodgerblue;
+   
 }
 
 #logo{
-    background-color: aquamarine;
+    background-color: #333;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -35,6 +41,8 @@ header{
     width: 5em;
     height: 2.5em;
     border-radius: 0.4em;
+    color:#fff;
+    font-family: sans-serif, serif;
     
 }
 
@@ -43,11 +51,12 @@ header{
     display: flex;
     flex: 4;
     width: 90%;
-    background-color:#0078d7 ;
+    background-color:#333 ;
     justify-content: space-around;
     align-items: center;
     font-size: 20px;
-     color:floralwhite;
+     color: #fff;
+    font-family: sans-serif, serif;
     
 }
 
@@ -89,17 +98,25 @@ header{
         width: 50%;
     }
     #navBarMenu{
-      margin-top: 1px;
-        width: 95%;
+        margin-top: 1px;
+        padding-left: 0;
+        width: 99%;
         font-size: 15px;
         color:floralwhite;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
     }
     .listItem, .lastItem {
+        flex: 1;
+        border-radius: 0px;
+        
     }
     
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:500px) {
     header{
     flex-direction: column;
     }
@@ -114,14 +131,15 @@ header{
         background-color: #888;
         color:ghostwhite;
         font-size: 15px;
-        filter: drop-shadow(1px 5px 1px #888);
+        
     }
     .listItem, .lastItem {
-        background-color:#0078d7 ;
+        background-color:#333 ;
         padding-right: 2em;
         margin-bottom: 5px;
         width: 92%;
         border-radius: 8px;
+        cursor: pointer;
 
     }
    
