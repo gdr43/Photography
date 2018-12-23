@@ -1,0 +1,8 @@
+.bgpic{
+    background: url(flower.jpg) no-repeat center center fixed;
+    background-size: cover;
+     height: 100vh;
+    width: 100%;
+    filter: blur(6px);
+    
+}

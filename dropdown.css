@@ -1,0 +1,51 @@
+#navMenu{
+    
+    margin: 0;
+    padding: 0;
+}
+
+#navMenu ul{
+    
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+}
+
+#navMenu li{
+    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    position: relative;
+    background-color: aqua;
+}
+
+#navMenu ul li a{
+    
+    text-align: center;
+    text-decoration: none;
+    font-family: cursive, sans-serif;
+    height: 30px;
+    width: 150px;
+    display: block;
+    color: #000;
+    
+}
+
+#navMenu ul ul{
+    
+    position: absolute;
+    visibility: hidden;
+}
+
+#navMenu ul li:hover ul{
+    
+    visibility: visible;
+}
+
+#navMenu li:hover{
+    
+    background-color: red;
+}
+
